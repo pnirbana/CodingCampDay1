@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test RevoU</title>
+    <!-- Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Update Day 2</p>
+    <h1 class="text-3xl pb-4 text-blue-500 font-bold ml-6">Hello World!</h1>
+    <hr/>
+    <p>Hallo, nama saya <br/> Putra</p>
+    </p>
+    <!-- Komentar pake ctrl + / -->
+    <!-- Heading Mengecil setiap angka bertambah -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <!-- Text ada boldnya pake "<b>"-->
+    <p>This Text is <b>Bold.</b></p>
+    <!-- Text ada italicnya pake "<i>" -->
+    <p>This Text is <i>Italic.</i></p>
+    <!-- Text ini tulisan ke bawah -->
+    <p>This Text is <sub>down</sub></p>
+    <!-- Text ini tulisan ke atas -->
+    <p>This Text is <sup>up</sup></p>
+    <!-- Bullet Point -->
+    <!-- Kalo Bullet Point nya mau ganti model, disamping <ul tinggal ditambahin type (circle, square)-->
+    <h1>Bullet Point</h1>
+    <ul>
+        <li>Bullet Point 1 <p>Deskripsi Bullet Point 1</p></li>
+        <li>Bullet Point 2</li>
+        <li>Bullet Point 3</li>
+    </ul>
+    <!-- Urutan Angka -->
+    <!-- Kalo Urutan Angka mau ganti model, disamping <ol tinggal ditambahin type (a/A/i/I)-->
+    <h1>Urutan Angka</h1>
+    <p>Contoh urutan angka:</p>
+    <ol>
+        <li>Urutan Angka 1</li>
+        <li>Urutan Angka 2</li>
+        <li>Urutan Angka 3</li>
+    </ol>
+    <!-- Bikin Tabel beserta strukturnya -->
+    <h1>Tabel</h1>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>Putra</td>
+            <td>20</td>
+            <td>Bogor</td>
+        </tr>
+        <tr>
+            <td>Raisya</td>
+            <td>20</td>
+            <td>Bandung</td>
+        </tr>
+    </table>
+    <!-- Nampilin Gambar -->
+    <h1>Gambar</h1>
+    <img src="./foto pacar.jpg" alt="Placeholder Image">
+    <!-- Link (kalo mau mengarah ke website lain) -->
+    <h1>Link</h1>
+    <p>ini adalah link ke <a href="https://www.google.com">Google</a>:</p>
+    <!-- Link + Tab baru -->
+     <h1>Link Tab Baru</h1>
+    <p>ini adalah link ke <a href="https://www.google.com" target="_blank">Google</a>:</p>
+    <!-- Link ke ID -->
+    <h1>Link ke ID</h1>
+    <p>ini adalah link ke <a href="#hallo">Go to hallo</a></p>
+    <!-- Form -->
+    <h1>Form Contact Us</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="Gender">Gender:</label><br>
+        <!-- Pilihan 1 -->
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <!-- Pilihan 2 -->
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female<br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="Password" >Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="checkbox"/> I agree to the terms and conditions<br>
+        <input type="submit" value="Submit">
 </body>
 </html>
